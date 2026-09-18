@@ -1,0 +1,247 @@
+
+/* ==========================
+   CADASTRO
+========================== */
+
+.cadastro {
+    width: 100%;
+    padding: 25px;
+    background: #fff;
+    border-radius: 10px;
+    margin-bottom: 25px;
+}
+
+.cadastro h2 {
+    margin-bottom: 5px;
+}
+
+.cadastro p {
+    color: #777;
+    margin-bottom: 20px;
+}
+
+
+/* ==========================
+   FORMULÁRIO
+========================== */
+
+#formProduto {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.campo label {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.campo input {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    outline: none;
+}
+
+.campo input:focus {
+    border-color: #d92d2d;
+}
+
+
+/* ==========================
+   BOTÃO CADASTRAR
+========================== */
+
+.btn-cadastrar {
+    border: none;
+    padding: 12px;
+    background: #d92d2d;
+    color: white;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-cadastrar:hover {
+    background: #b92323;
+}
+
+
+/* ==========================
+   PRODUTOS
+========================== */
+
+.produtos {
+    width: 100%;
+    padding: 25px;
+    background: #fff;
+    border-radius: 10px;
+}
+
+.produtos-topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.produtos-topo h2 {
+    margin-bottom: 5px;
+}
+
+.produtos-topo p {
+    color: #777;
+    font-size: 14px;
+}
+
+#contador {
+    padding: 7px 12px;
+    background: #eee;
+    border-radius: 20px;
+    font-size: 13px;
+}
+
+
+/* ==========================
+   LISTA
+========================== */
+
+#listaProdutos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+
+/* ==========================
+   CARD DO PRODUTO
+========================== */
+
+.card-produto {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    background: white;
+}
+
+.card-produto img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.card-info {
+    padding: 15px;
+}
+
+.card-info h3 {
+    margin-bottom: 8px;
+}
+
+.card-valor {
+    color: #d92d2d;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card-quantidade {
+    font-size: 14px;
+    color: #666;
+}
+
+
+/* ==========================
+   CONTROLE
+========================== */
+
+.controle-quantidade {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.controle-quantidade button {
+    width: 35px;
+    height: 35px;
+    border: none;
+    border-radius: 5px;
+    background: #eee;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.controle-quantidade span {
+    min-width: 30px;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+/* ==========================
+   EXCLUIR
+========================== */
+
+.btn-excluir {
+    width: 100%;
+    margin-top: 12px;
+    padding: 9px;
+    border: none;
+    border-radius: 5px;
+    background: #f1f1f1;
+    color: #d92d2d;
+    cursor: pointer;
+}
+
+
+/* ==========================
+   SEM PRODUTOS
+========================== */
+
+#produtosVazios {
+    text-align: center;
+    padding: 40px;
+    color: #777;
+}
+
+#produtosVazios span {
+    font-size: 40px;
+}
+
+#produtosVazios h3 {
+    margin: 10px 0 5px;
+}
+
+
+/* ==========================
+   RESPONSIVO
+========================== */
+
+@media (max-width: 800px) {
+
+    #listaProdutos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 550px) {
+
+    #listaProdutos {
+        grid-template-columns: 1fr;
+    }
+
+    .produtos-topo {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+}

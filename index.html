@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--estilos-->
+    <link rel="stylesheet" href="estilo.css/icons.css">
+    <link rel="stylesheet" href="estilo.css/init.css">
+    <link rel="stylesheet" href="estilo.css/header.css">
+    <link rel="stylesheet" href="estilo.css/produtos.css">
+    <title>delicias-gourmet</title>
+</head>
+
+<body>
+    <!--nesta sessao de inicio, vai ficar a aparesentacao do site-->
+    <header class="header">
+        <div class="titulo-header">
+            <span class="noto-v1--pizza"></span>
+            <h1>Açai Delicias Gourmet</h1>
+        </div>
+        <div class="prop">
+            <span class="ant-design--user-switch-outlined"></span>
+            <p>Proprietario</p>
+            <span class="akar-icons--chevron-down"></span>
+        </div>
+    </header>
+    <section class="cardapio">
+        <h1>Gerenciar Cardápio</h1>
+        <p>Adicione, edite ou remova os pratos e valores do seu cardápio.</p>
+    </section>
+    <section class="cadastro">
+        <h2>Cadastrar Produto</h2>
+        <p>Adicione um novo produto ao seu cardápio.</p>
+        <form id="formProduto">
+            <!-- FOTO -->
+            <div class="campo">
+                <label for="foto">Foto do produto</label>
+                <input type="file" id="foto" accept="image/*" required>
+            </div>
+            <!-- NOME -->
+            <div class="campo">
+                <label for="nome">Nome do produto</label>
+                <input type="text" id="nome" placeholder="Ex: X-Burguer" required>
+            </div>
+            <!-- VALOR -->
+            <div class="campo">
+                <label for="valor">Valor</label>
+                <input type="number" id="valor" placeholder="Ex: 25.00" min="0.01" step="0.01" required>
+            </div>
+            <!-- QUANTIDADE -->
+            <div class="campo">
+                <label for="quantidade">Quantidade</label>
+                <input type="number" id="quantidade" placeholder="Ex: 10" min="1" step="1" required>
+            </div>
+            <!-- BOTÃO -->
+            <button type="submit" class="btn-cadastrar">
+                + Cadastrar prato
+            </button>
+        </form>
+    </section>
+    <section class="produtos">
+        <div class="produtos-topo">
+            <div>
+                <h2>Produtos cadastrados</h2>
+                <p>Veja os produtos disponíveis no seu cardápio.</p>
+            </div>
+            <span id="contador">
+                0 produtos
+            </span>
+        </div>
+        <!--
+        O JavaScript vai colocar
+        os produtos aqui dentro.
+    -->
+        <div id="listaProdutos"></div>
+        <!-- Aparece quando não existem produtos -->
+        <div id="produtosVazios">
+            <span>🍽️</span>
+            <h3>Nenhum produto cadastrado</h3>
+            <p>
+                Cadastre seu primeiro produto acima.
+            </p>
+        </div>
+
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="scripts/supabase.js"></script>
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>
