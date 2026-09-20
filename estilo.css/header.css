@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+.header{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    color: aliceblue;
+    background-color: #14181B;
+    background-image: url('../imagens/image.png');
+    background-repeat: no-repeat;
+    background-size: clamp(120px, 30vw, 200px);
+    background-position: center center;
+    padding: 0 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    padding: 40px;
+    font-family: 'Inter', "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+.prop{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 0.5rem;
+}
+@media (max-width:610px){
+    .header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+    }
+}
+@media (max-width:467px){
+    .titulo-header h1{
+        font-size: 1rem;
+        text-align: center;
+    }
+}
+@media (max-width:610px){
+    .titulo-header span{
+        display: none;
+    }
+}
+
+.cardapio{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 1rem;
+    gap: 0.5rem;
+}
+@media (max-width:310px){
+    .cardapio h1{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .cardapio{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+}
