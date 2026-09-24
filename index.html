@@ -1,9 +1,16 @@
+
 <!DOCTYPE html>
+
 <html lang="pt-BR">
 
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
     <!-- ESTILOS -->
     <link rel="stylesheet" href="estilo.css/icons.css">
@@ -12,9 +19,14 @@
     <link rel="stylesheet" href="estilo.css/produtos.css">
 
     <!-- FAVICON -->
-    <link rel="icon" type="image/png" href="imagens/favicon.png">
+    <link
+        rel="icon"
+        type="image/png"
+        href="imagens/favicon.png"
+    >
 
     <title>delicias-gourmet</title>
+
 </head>
 
 <body>
@@ -28,6 +40,7 @@
         </div>-->
     </header>
 
+
     <!-- TÍTULO -->
     <section class="cardapio">
 
@@ -39,6 +52,7 @@
 
     </section>
 
+
     <!-- CADASTRO -->
     <section class="cadastro">
 
@@ -47,6 +61,7 @@
         <p>
             Adicione um novo produto ao seu cardápio.
         </p>
+
 
         <form id="formProduto">
 
@@ -66,6 +81,7 @@
 
             </div>
 
+
             <!-- NOME -->
             <div class="campo">
 
@@ -81,6 +97,7 @@
                 >
 
             </div>
+
 
             <!-- VALOR -->
             <div class="campo">
@@ -100,6 +117,7 @@
 
             </div>
 
+
             <!-- QUANTIDADE -->
             <div class="campo">
 
@@ -117,6 +135,7 @@
                 >
 
             </div>
+
 
             <!-- CATEGORIA -->
             <div class="campo">
@@ -147,9 +166,22 @@
                         🥤 Refrigerante
                     </option>
 
+                    <option value="acai">
+                        🥤 Açaí
+                    </option>
+
+                    <option value="combo">
+                        🍔 Combos
+                    </option>
+
+                    <option value="borda">
+                        🧀 Borda
+                    </option>
+
                 </select>
 
             </div>
+
 
             <!-- BOTÃO -->
             <button
@@ -162,6 +194,7 @@
         </form>
 
     </section>
+
 
     <!-- PRODUTOS CADASTRADOS -->
     <section class="produtos">
@@ -180,14 +213,20 @@
 
             </div>
 
+
             <span id="contador">
                 0 produtos
             </span>
 
         </div>
 
-        <!-- O JavaScript vai colocar os produtos aqui dentro. -->
+
+        <!--
+            O JavaScript vai colocar
+            os produtos aqui dentro.
+        -->
         <div id="listaProdutos"></div>
+
 
         <!-- APARECE QUANDO NÃO EXISTEM PRODUTOS -->
         <div id="produtosVazios">
@@ -206,6 +245,7 @@
 
     </section>
 
+
     <!-- SUPABASE -->
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 
@@ -216,3 +256,4 @@
 </body>
 
 </html>
+
